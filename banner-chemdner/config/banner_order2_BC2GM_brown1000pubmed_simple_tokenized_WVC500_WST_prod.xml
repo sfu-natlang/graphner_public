@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<banner-configuration>
+  <banner>
+    <eval>
+      <datasetName>banner.eval.dataset.BC2GMDataset</datasetName>
+      <dataset>
+        <sentenceFilename>../Data/bc2geneMention/train/train.in</sentenceFilename>
+        <mentionTestFilename>../Data/bc2geneMention/train/GENE.eval</mentionTestFilename>
+        <mentionAlternateFilename>../Data/bc2geneMention/train/ALTGENE.eval</mentionAlternateFilename>
+      </dataset>
+      <idInputFilename>output/ids.txt</idInputFilename>
+      <rawInputFilename>output/raw.txt</rawInputFilename>
+      <trainingInputFilename>output/training.txt</trainingInputFilename>
+      <outputFilename>output/output.txt</outputFilename>
+      <inContextAnalysisFilename>output/contextAnalysis.html</inContextAnalysisFilename>
+      <mentionFilename>output/mention.txt</mentionFilename>
+      <modelFilename>output/model_order2_BC2GM_brown1000pubmed_simple_tokenized_WVC500_WST_prod.bin</modelFilename>
+      <lemmatiserDataDirectory>nlpdata/lemmatiser</lemmatiserDataDirectory>
+      <posTaggerDataDirectory>nlpdata/tagger</posTaggerDataDirectory>
+      <posTagger>dragon.nlp.tool.HeppleTagger</posTagger>
+      <tokenizer>banner.tokenization.SimpleTokenizer</tokenizer>
+      <useParenthesisPostProcessing>true</useParenthesisPostProcessing>
+      <useLocalAbbreviationPostProcessing>true</useLocalAbbreviationPostProcessing>
+      <useNumericNormalization>true</useNumericNormalization>
+      <tagFormat>IOB</tagFormat>
+      <crfOrder>2</crfOrder>
+      <mentionTypes>Required</mentionTypes>
+      <sameTypeOverlapOption>Exception</sameTypeOverlapOption>
+      <differentTypeOverlapOption>Exception</differentTypeOverlapOption>
+      <dictionaryTagger>banner.tagging.dictionary.DictionaryTagger</dictionaryTagger>
+      <!-- banner-chemdner params -->
+      <useBioLemmatiser>true</useBioLemmatiser>
+      <!-- brown cluster features params -->
+      <useBrown>true</useBrown>
+      <brownPathsToClusterFiles>nlpdata/BrownHierarchicalWordClusters/merged-abs-simple-tokenized-c1000-p1.txt</brownPathsToClusterFiles>
+      <brownThresholds>0</brownThresholds>
+      <brownIsLowercaseBrownClusters>false</brownIsLowercaseBrownClusters>
+      <!-- C&W word representation features params -->
+      <useWe>false</useWe>
+      <weFilenames>nlpdata/WordEmbedding/model-2280000000.LEARNING_RATE=1e-08.EMBEDDING_LEARNING_RATE=1e-07.EMBEDDING_SIZE=50.txt</weFilenames>
+      <weEmbeddingDimensionality>50</weEmbeddingDimensionality>
+      <weMinWordAppearanceThres>0</weMinWordAppearanceThres>
+      <weIsLowecasedEmbedding>false</weIsLowecasedEmbedding>
+      <weNormalizationConstant>0.1</weNormalizationConstant>
+      <normMethod>INDEPENDENT</normMethod>
+      <!-- Word vector class features params -->
+      <useWordVectorClass>true</useWordVectorClass>
+      <nResources>1</nResources>
+      <pathsToClassFile>nlpdata/WordVectorClasses/whitespace-tokenized-500.classes.sorted.txt</pathsToClassFile>
+      <isLowercaseWordVectorClass>false</isLowercaseWordVectorClass>
+    </eval>
+    <tagging>
+      <dictionary>
+        <DictionaryTagger>
+          <filterContainedMentions>true</filterContainedMentions>
+          <normalizeMixedCase>false</normalizeMixedCase>
+          <normalizeDigits>false</normalizeDigits>
+          <canonize>false</canonize>
+          <generate2PartVariations>true</generate2PartVariations>
+          <dropEndParentheticals>false</dropEndParentheticals>
+          <dictionaryFile>dict/single.txt</dictionaryFile>
+          <dictionaryType>GENE</dictionaryType>
+        </DictionaryTagger>
+      </dictionary>
+    </tagging>
+  </banner>
+</banner-configuration>

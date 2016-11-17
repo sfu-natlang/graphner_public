@@ -1,0 +1,67 @@
+BANNER-CHEMDNER
+=====================================
+
+
+BANNER-CHEMDNER is a new branch of BANNER, a biomedical NER system.
+The system is developed to participate in CHEMDNER challange task of BioCreative workshop IV and can be used to identify chemical and drug mention or biomedical mention from free text.
+
+A demo app may be found here: https://bitbucket.org/tsendeemts/chemdner-demo
+
+To use BANNER-CHEMDNER in your own project
+------------------------------------------
+
+
+	1. Include the jar files in 'lib' dir to your project class-path
+	2. Set resource and model paths in config (checkout 'config' dir)
+	3. Write your code to call BANNER-CHEMDNER API (checkout demo app), sample snippet for running mention recognition as follows (Scala):
+
+	/**
+	  * Create BANNER-CHEMDNER config
+	  */
+	 val conf = new XMLConfiguration(confPath)
+
+	 /**
+	  * Create resources by calling BANNER helpers
+	  */
+	 val tokenizer = BANNER.getTokenizer(conf)
+	 val dictionary = BANNER.getDictionary(conf)
+	 val lemmatiser = BANNER.getLemmatiser(conf)
+	 val posTagger = BANNER.getPosTagger(conf)
+	 val brownClusters = BANNER.getBrownClusters(conf)
+	 val wordEmbeddings = BANNER.getWordEmbeddings(conf)
+	 val wordVectorClasses = BANNER.getWordVectorClasses(conf)
+	 val postProcessor = BANNER.getPostProcessor(conf)
+	 val localConfig = conf.configurationAt(classOf[BANNER].getPackage().getName)
+
+	 /**
+	  * Loading model file
+	  */
+	 val modelFilename = localConfig.getString("modelFilename")
+
+	 /**
+	  * Create tagger object
+	  */
+	 val tagger = CRFTagger.load(new File(modelFilename), lemmatiser, posTagger, dictionary, brownClusters, wordEmbeddings, wordVectorClasses)
+
+
+	 /**
+	  * Identifying mentions
+	  */
+	 val taggedText = BANNER.process(tagger, tokenizer, postProcessor, sentence)
+
+
+To train/test a new model or tag text
+-------------------------------------
+
+
+	'bin' dir contains a pre-built jar with its libraries (built against java 1.7). You may use that jar to train/test a new model. Please refer to banner.eval.BANNER class for parameter description. In short you need to have your configuration file, and issue following command to train:
+
+	java -jar ./bin/BANNER-CHEMDNER.jar train <***path-to***config>
+
+	to test:
+
+	java -jar ./bin/BANNER-CHEMDNER.jar test <***path-to***config> <***path-to***test.data>
+
+	You may want to tag free text data and use another tool for evaluation, such BioCreative evaluation tool, to tag:
+
+	java -jar ./bin/BANNER-CHEMDNER.jar tag <***path-to***config> <***path-to***test.data>

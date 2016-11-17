@@ -1,0 +1,410 @@
+Buildfile: /projects/jlazo_prj/GraphNER/banner-chemdner/build.xml
+
+-pre-init:
+
+-init-private:
+
+-init-user:
+
+-init-project:
+
+-init-macrodef-property:
+
+-do-init:
+
+-post-init:
+
+-init-check:
+
+-init-ap-cmdline-properties:
+
+-init-macrodef-javac-with-processors:
+
+-init-macrodef-javac-without-processors:
+
+-init-macrodef-javac:
+
+-init-macrodef-junit:
+
+-init-debug-args:
+
+-init-macrodef-nbjpda:
+
+-init-macrodef-debug:
+
+-init-macrodef-java:
+
+-init-presetdef-jar:
+
+-init-ap-cmdline-supported:
+
+-init-ap-cmdline:
+
+init:
+
+-deps-jar-init:
+   [delete] Deleting: /projects/jlazo_prj/GraphNER/banner-chemdner/build/built-jar.properties
+
+deps-jar:
+
+-warn-already-built-jar:
+[propertyfile] Updating property file: /projects/jlazo_prj/GraphNER/banner-chemdner/build/built-jar.properties
+
+-check-automatic-build:
+
+-clean-after-automatic-build:
+
+-verify-automatic-build:
+
+-pre-pre-compile:
+
+-pre-compile:
+
+-copy-persistence-xml:
+
+-compile-depend:
+
+-do-compile:
+    [javac] Compiling 75 source files to /projects/jlazo_prj/GraphNER/banner-chemdner/build/classes
+    [javac] warning: [options] bootstrap class path not set in conjunction with -source 1.7
+    [javac] Note: /projects/jlazo_prj/GraphNER/banner-chemdner/src/banner/tagging/CRFTagger.java uses or overrides a deprecated API.
+    [javac] Note: Recompile with -Xlint:deprecation for details.
+    [javac] Note: /projects/jlazo_prj/GraphNER/banner-chemdner/src/banner/annotation/BEAT.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 warning
+
+-post-compile:
+
+compile:
+
+run:
+     [echo] lib\commons-collections-3.2.1.jar:lib\commons-configuration-1.6.jar:lib\commons-lang-2.4.jar:lib\commons-logging-1.1.1.jar:lib\dragontool.jar:lib\heptag.jar:lib\mallet-deps.jar:lib\mallet.jar:lib\uima\uima-adapter-soap.jar:lib\uima\uima-adapter-vinci.jar:lib\uima\uima-core.jar:lib\uima\uima-cpe.jar:lib\uima\uima-document-annotation.jar:lib\uima\uima-examples.jar:lib\uima\uima-tools.jar:lib\biolemmatizer-core-1.1-jar-with-dependencies.jar:build/classes
+     [java] banner.eval
+     [java] banner.eval.dataset
+     [java] banner.eval
+     [java] tagformat=IOB
+     [java] crfOrder=2
+     [java] Reading the Brown clusters resource: nlpdata/BrownHierarchicalWordClusters/merged-abs-simple-tokenized-c1000-p1.txt
+     [java] 1136085 words added
+     [java] Reading the word vector class resource: nlpdata/WordVectorClasses/whitespace-tokenized-500.classes.sorted.txt
+     [java] 4359932 words added
+     [java] Completed input: 12039
+     [java] Training data loaded, starting training
+     [java] State #0 "O,O"
+     [java] initialWeight=0.0, finalWeight=0.0
+     [java] #destinations=2
+     [java] -> O,O
+     [java] -> O,B-GENE
+     [java] State #1 "O,B-GENE"
+     [java] initialWeight=0.0, finalWeight=0.0
+     [java] #destinations=3
+     [java] -> B-GENE,O
+     [java] -> B-GENE,B-GENE
+     [java] -> B-GENE,I-GENE
+     [java] State #2 "B-GENE,O"
+     [java] initialWeight=0.0, finalWeight=0.0
+     [java] #destinations=2
+     [java] -> O,O
+     [java] -> O,B-GENE
+     [java] State #3 "B-GENE,B-GENE"
+     [java] initialWeight=0.0, finalWeight=0.0
+     [java] #destinations=3
+     [java] -> B-GENE,O
+     [java] -> B-GENE,B-GENE
+     [java] -> B-GENE,I-GENE
+     [java] State #4 "B-GENE,I-GENE"
+     [java] initialWeight=0.0, finalWeight=0.0
+     [java] #destinations=3
+     [java] -> I-GENE,O
+     [java] -> I-GENE,B-GENE
+     [java] -> I-GENE,I-GENE
+     [java] State #5 "I-GENE,O"
+     [java] initialWeight=0.0, finalWeight=0.0
+     [java] #destinations=2Training on 0.2% of the data this round.
+     [java] -> O,O
+     [java] -> O,B-GENE
+     [java] 
+     [java] State #6 "I-GENE,B-GENE"
+     [java] initialWeight=0.0, finalWeight=0.0
+     [java] #destinations=3
+     [java] -> B-GENE,O
+     [java] -> B-GENE,B-GENE
+     [java] -> B-GENE,I-GENE
+     [java] State #7 "I-GENE,I-GENE"
+     [java] initialWeight=0.0, finalWeight=0.0
+     [java] #destinations=3
+     [java] -> I-GENE,O
+     [java] -> I-GENE,B-GENE
+     [java] -> I-GENE,I-GENE
+     [java] CRF weights[O,O->O,O:O] num features = 116018
+     [java] CRF weights[O,O->O,B-GENE:B-GENE] num features = 17072
+     [java] CRF weights[O,B-GENE->B-GENE,O:O] num features = 27310
+     [java] CRF weights[O,B-GENE->B-GENE,B-GENE:B-GENE] num features = 2166
+     [java] CRF weights[O,B-GENE->B-GENE,I-GENE:I-GENE] num features = 3952
+     [java] CRF weights[B-GENE,O->O,O:O] num features = 36823
+     [java] CRF weights[B-GENE,O->O,B-GENE:B-GENE] num features = 7882
+     [java] CRF weights[B-GENE,B-GENE->B-GENE,O:O] num features = 18071
+     [java] CRF weights[B-GENE,B-GENE->B-GENE,B-GENE:B-GENE] num features = 2090
+     [java] CRF weights[B-GENE,B-GENE->B-GENE,I-GENE:I-GENE] num features = 425
+     [java] CRF weights[B-GENE,I-GENE->I-GENE,O:O] num features = 17083
+     [java] CRF weights[B-GENE,I-GENE->I-GENE,B-GENE:B-GENE] num features = 2090
+     [java] CRF weights[B-GENE,I-GENE->I-GENE,I-GENE:I-GENE] num features = 4372
+     [java] CRF weights[I-GENE,O->O,O:O] num features = 31063
+     [java] CRF weights[I-GENE,O->O,B-GENE:B-GENE] num features = 3631
+     [java] CRF weights[I-GENE,B-GENE->B-GENE,O:O] num features = 18025
+     [java] CRF weights[I-GENE,B-GENE->B-GENE,B-GENE:B-GENE] num features = 2090
+     [java] CRF weights[I-GENE,B-GENE->B-GENE,I-GENE:I-GENE] num features = 425
+     [java] CRF weights[I-GENE,I-GENE->I-GENE,O:O] num features = 19142
+     [java] CRF weights[I-GENE,I-GENE->I-GENE,B-GENE:B-GENE] num features = 2090
+     [java] CRF weights[I-GENE,I-GENE->I-GENE,I-GENE:I-GENE] num features = 5987
+     [java] Number of weights = 337828
+     [java] CRF about to train with 10 iterations
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -62080.93014929948
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -32450.43139174925
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -27212.553746426012
+     [java] CRF finished one iteration of maximizer, i=0
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -4043249.4069916094
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -186457.27635240133
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -11138.097496796541
+     [java] CRF finished one iteration of maximizer, i=1
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -16729.24364743246
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -8608.169183079503
+     [java] CRF finished one iteration of maximizer, i=2
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -7220.263618493005
+     [java] CRF finished one iteration of maximizer, i=3
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -6763.368661866808
+     [java] CRF finished one iteration of maximizer, i=4
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -6111.194991541342
+     [java] CRF finished one iteration of maximizer, i=5
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -5763.1465895081665
+     [java] CRF finished one iteration of maximizer, i=6
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -4061.936995470274
+     [java] CRF finished one iteration of maximizer, i=7
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3227.0400704945155
+     [java] CRF finished one iteration of maximizer, i=8
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2370.1292243112534
+     [java] CRF finished one iteration of maximizer, i=9
+     [java] Training on 0.5% of the data this round.
+     [java] CRF about to train with 10 iterations
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -5855.982980971207
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -6484.015606050394
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -4899.967659369198
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -5093.839384180648
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -4620.143094583921
+     [java] CRF finished one iteration of maximizer, i=0
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -4554.042560102037
+     [java] CRF finished one iteration of maximizer, i=1
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -4306.297260675403
+     [java] CRF finished one iteration of maximizer, i=2
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3589.409817202561
+     [java] CRF finished one iteration of maximizer, i=3
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3032.1525237588453
+     [java] CRF finished one iteration of maximizer, i=4
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -12395.424545634378
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3021.0522818120007
+     [java] CRF finished one iteration of maximizer, i=5
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2650.6784460236263
+     [java] CRF finished one iteration of maximizer, i=6
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2523.888280936149
+     [java] CRF finished one iteration of maximizer, i=7
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2353.410222927989
+     [java] CRF finished one iteration of maximizer, i=8
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2271.5747487595245
+     [java] CRF finished one iteration of maximizer, i=9
+     [java] Training on 0.8% of the data this round.
+     [java] CRF about to train with 10 iterations
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3764.926220351042
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -21021.715455548594
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -4200.712150426977
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3602.408830530319
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3385.909554257139
+     [java] CRF finished one iteration of maximizer, i=0
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3322.76147311757
+     [java] CRF finished one iteration of maximizer, i=1
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3298.405253695952
+     [java] CRF finished one iteration of maximizer, i=2
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3251.168666690611
+     [java] CRF finished one iteration of maximizer, i=3
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3181.304685101034
+     [java] CRF finished one iteration of maximizer, i=4
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2901.0120661308392
+     [java] CRF finished one iteration of maximizer, i=5
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2772.970493358819
+     [java] CRF finished one iteration of maximizer, i=6
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2652.6562485649947
+     [java] CRF finished one iteration of maximizer, i=7
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2536.6824018737693
+     [java] CRF finished one iteration of maximizer, i=8
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2515.6071334671847
+     [java] CRF finished one iteration of maximizer, i=9
+     [java] CRF about to train with 1000 iterations
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3492.1318673952333
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -17332.79353790553
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3387.7928464999777
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3336.997647638854
+     [java] CRF finished one iteration of maximizer, i=0
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3316.234900221287
+     [java] CRF finished one iteration of maximizer, i=1
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3285.6204138813428
+     [java] CRF finished one iteration of maximizer, i=2
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3246.8141702779544
+     [java] CRF finished one iteration of maximizer, i=3
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3194.057562615191
+     [java] CRF finished one iteration of maximizer, i=4
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3125.4189875619923
+     [java] CRF finished one iteration of maximizer, i=5
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -3057.239801613526
+     [java] CRF finished one iteration of maximizer, i=6
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2943.2894352838443
+     [java] CRF finished one iteration of maximizer, i=7
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2851.501785134135
+     [java] CRF finished one iteration of maximizer, i=8
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2720.673256238753
+     [java] CRF finished one iteration of maximizer, i=9
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2659.5431690180862
+     [java] CRF finished one iteration of maximizer, i=10
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2523.2131561840815
+     [java] CRF finished one iteration of maximizer, i=11
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2735.898873506158
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2459.7852342381407
+     [java] CRF finished one iteration of maximizer, i=12
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2376.436677091518
+     [java] CRF finished one iteration of maximizer, i=13
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2360.6049851531807
+     [java] CRF finished one iteration of maximizer, i=14
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2336.2811748465165
+     [java] CRF finished one iteration of maximizer, i=15
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2254.8319099068526
+     [java] CRF finished one iteration of maximizer, i=16
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2206.6397914545596
+     [java] CRF finished one iteration of maximizer, i=17
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2133.6884658411423
+     [java] CRF finished one iteration of maximizer, i=18
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2078.6127436501333
+     [java] CRF finished one iteration of maximizer, i=19
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2073.6039008268617
+     [java] CRF finished one iteration of maximizer, i=20
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -2026.4641261328777
+     [java] CRF finished one iteration of maximizer, i=21
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1967.7239940573277
+     [java] CRF finished one iteration of maximizer, i=22
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1860.1001992251645
+     [java] CRF finished one iteration of maximizer, i=23
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1800.8145625848888
+     [java] CRF finished one iteration of maximizer, i=24
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1757.41779197022
+     [java] CRF finished one iteration of maximizer, i=25
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1744.5175458040812
+     [java] CRF finished one iteration of maximizer, i=26
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1704.911767016237
+     [java] CRF finished one iteration of maximizer, i=27
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1662.7200200734762
+     [java] CRF finished one iteration of maximizer, i=28
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1575.7401451410615
+     [java] CRF finished one iteration of maximizer, i=29
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1550.6645563200666
+     [java] CRF finished one iteration of maximizer, i=30
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1534.2146546017034
+     [java] CRF finished one iteration of maximizer, i=31
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1480.678489229081
+     [java] CRF finished one iteration of maximizer, i=32
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1437.3484295192789
+     [java] CRF finished one iteration of maximizer, i=33
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1406.0902222329
+     [java] CRF finished one iteration of maximizer, i=34
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1374.3559281812477
+     [java] CRF finished one iteration of maximizer, i=35
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1345.6490490840808
+     [java] CRF finished one iteration of maximizer, i=36
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1317.470096873305
+     [java] CRF finished one iteration of maximizer, i=37
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1293.0426180691923
+     [java] CRF finished one iteration of maximizer, i=38
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1274.162843726574
+     [java] CRF finished one iteration of maximizer, i=39
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1265.0112225860155
+     [java] CRF finished one iteration of maximizer, i=40
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1248.2460910957518
+     [java] CRF finished one iteration of maximizer, i=41
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1224.2306378949752
+     [java] CRF finished one iteration of maximizer, i=42
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1209.327054618384
+     [java] CRF finished one iteration of maximizer, i=43
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1205.213308268925
+     [java] CRF finished one iteration of maximizer, i=44
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1203.3431063556445
+     [java] CRF finished one iteration of maximizer, i=45
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1196.785271273598
+     [java] CRF finished one iteration of maximizer, i=46
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1184.9583630640027
+     [java] CRF finished one iteration of maximizer, i=47
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1167.1636648740866
+     [java] CRF finished one iteration of maximizer, i=48
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1161.925002255744
+     [java] CRF finished one iteration of maximizer, i=49
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1154.1121503165625
+     [java] CRF finished one iteration of maximizer, i=50
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1151.992727502551
+     [java] CRF finished one iteration of maximizer, i=51
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1142.005047048535
+     [java] CRF finished one iteration of maximizer, i=52
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1119.3088869001435
+     [java] CRF finished one iteration of maximizer, i=53
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1074.8536968943547
+     [java] CRF finished one iteration of maximizer, i=54
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1053.082503544793
+     [java] CRF finished one iteration of maximizer, i=55
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1034.5723525454155
+     [java] CRF finished one iteration of maximizer, i=56
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -1008.1145324878972
+     [java] CRF finished one iteration of maximizer, i=57
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -998.5745291085016
+     [java] CRF finished one iteration of maximizer, i=58
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -997.3356991864499
+     [java] CRF finished one iteration of maximizer, i=59
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -980.344773936395
+     [java] CRF finished one iteration of maximizer, i=60
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -956.8336578863432
+     [java] CRF finished one iteration of maximizer, i=61
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -944.7073114546057
+     [java] CRF finished one iteration of maximizer, i=62
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -918.1954675755001
+     [java] CRF finished one iteration of maximizer, i=63
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -899.9205570627971
+     [java] CRF finished one iteration of maximizer, i=64
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -894.3194642503342
+     [java] CRF finished one iteration of maximizer, i=65
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -888.638624218728
+     [java] CRF finished one iteration of maximizer, i=66
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -877.8654385380463
+     [java] CRF finished one iteration of maximizer, i=67
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -866.6116807925731
+     [java] CRF finished one iteration of maximizer, i=68
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -841.9301889764207
+     [java] CRF finished one iteration of maximizer, i=69
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -840.1383738601281
+     [java] CRF finished one iteration of maximizer, i=70
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -837.9755138165126
+     [java] CRF finished one iteration of maximizer, i=71
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -828.9487514338275
+     [java] CRF finished one iteration of maximizer, i=72
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -817.468028496359
+     [java] CRF finished one iteration of maximizer, i=73
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -807.9574167984447
+     [java] CRF finished one iteration of maximizer, i=74
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -784.0900298082598
+     [java] CRF finished one iteration of maximizer, i=75
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -767.0530113945575
+     [java] CRF finished one iteration of maximizer, i=76
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -745.0811856665548
+     [java] CRF finished one iteration of maximizer, i=77
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -746.0789298683466
+     [java] Training complete, saving model
+     [java] getValue() (loglikelihood, optimizable by label likelihood) = -745.0170515437645
+     [java] Exiting L-BFGS on termination #1:
+     [java] value difference below tolerance (oldValue: -745.0811856665548 newValue: -745.0170515437645
+     [java] CRF finished one iteration of maximizer, i=78
+     [java] CRF training has converged, i=78
+
+BUILD SUCCESSFUL
+Total time: 22 minutes 6 seconds
