@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/p/banner/code/!svn/ver/13/trunk/src/banner/normalization
+END
+MentionDisambiguator.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/p/banner/code/!svn/ver/3/trunk/src/banner/normalization/MentionDisambiguator.java
+END
+BestMatchDisambiguator.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/banner/code/!svn/ver/3/trunk/src/banner/normalization/BestMatchDisambiguator.java
+END
+Gazetteer.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/banner/code/!svn/ver/3/trunk/src/banner/normalization/Gazetteer.java
+END
+MentionIdentifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/banner/code/!svn/ver/3/trunk/src/banner/normalization/MentionIdentifier.java
+END
+IndexedMentionIdentifier.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/p/banner/code/!svn/ver/13/trunk/src/banner/normalization/IndexedMentionIdentifier.java
+END

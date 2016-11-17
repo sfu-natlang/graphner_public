@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/banner/code/!svn/ver/34/trunk/src/banner/types
+END
+Token.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/banner/code/!svn/ver/9/trunk/src/banner/types/Token.java
+END
+Sentence.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/banner/code/!svn/ver/21/trunk/src/banner/types/Sentence.java
+END
+EntityIdentification.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/banner/code/!svn/ver/3/trunk/src/banner/types/EntityIdentification.java
+END
+SentenceWithOffset.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/banner/code/!svn/ver/30/trunk/src/banner/types/SentenceWithOffset.java
+END
+Mention.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/banner/code/!svn/ver/34/trunk/src/banner/types/Mention.java
+END
+Entity.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/p/banner/code/!svn/ver/3/trunk/src/banner/types/Entity.java
+END
+EntityName.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/banner/code/!svn/ver/3/trunk/src/banner/types/EntityName.java
+END
+EntityType.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/banner/code/!svn/ver/3/trunk/src/banner/types/EntityType.java
+END

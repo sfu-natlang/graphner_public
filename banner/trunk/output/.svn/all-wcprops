@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/p/banner/code/!svn/ver/34/trunk/output
+END
+model_BC5CDR_O1_450.bin
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/banner/code/!svn/ver/34/trunk/output/model_BC5CDR_O1_450.bin
+END
+model_BC5CDR_O1_UMLS2013AA.bin
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/banner/code/!svn/ver/34/trunk/output/model_BC5CDR_O1_UMLS2013AA.bin
+END
+model_BC2GM.bin
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/banner/code/!svn/ver/5/trunk/output/model_BC2GM.bin
+END
+model_NCBIDisease_O1_UMLS2013AA_TRAINDEV.bin
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/banner/code/!svn/ver/34/trunk/output/model_NCBIDisease_O1_UMLS2013AA_TRAINDEV.bin
+END
+model_NCBIDisease_O1_UMLS2013AA_TRAIN.bin
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/banner/code/!svn/ver/22/trunk/output/model_NCBIDisease_O1_UMLS2013AA_TRAIN.bin
+END
+model_BC5CDR_O1.bin
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/banner/code/!svn/ver/34/trunk/output/model_BC5CDR_O1.bin
+END
+model_BC5CDR_O1_UMLS2013AA_450.bin
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/banner/code/!svn/ver/34/trunk/output/model_BC5CDR_O1_UMLS2013AA_450.bin
+END
+model_NCBIDisease_O1_TRAINDEV.bin
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/banner/code/!svn/ver/34/trunk/output/model_NCBIDisease_O1_TRAINDEV.bin
+END
+model_NCBIDisease_O1_TRAIN.bin
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/banner/code/!svn/ver/26/trunk/output/model_NCBIDisease_O1_TRAIN.bin
+END

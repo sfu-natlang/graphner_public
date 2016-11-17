@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/p/banner/code/!svn/ver/34/trunk/src/banner/tagging/pipe
+END
+RChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/banner/code/!svn/ver/12/trunk/src/banner/tagging/pipe/RChar.java
+END
+TokenNumberClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/banner/code/!svn/ver/12/trunk/src/banner/tagging/pipe/TokenNumberClass.java
+END
+Pretagger.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/banner/code/!svn/ver/12/trunk/src/banner/tagging/pipe/Pretagger.java
+END
+Sentence2TokenSequence.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/p/banner/code/!svn/ver/5/trunk/src/banner/tagging/pipe/Sentence2TokenSequence.java
+END
+TokenLength.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/banner/code/!svn/ver/12/trunk/src/banner/tagging/pipe/TokenLength.java
+END
+TokenWordClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/banner/code/!svn/ver/12/trunk/src/banner/tagging/pipe/TokenWordClass.java
+END
+TokenWeight.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/banner/code/!svn/ver/3/trunk/src/banner/tagging/pipe/TokenWeight.java
+END
+LChar.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/banner/code/!svn/ver/12/trunk/src/banner/tagging/pipe/LChar.java
+END
+SimFind.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/banner/code/!svn/ver/19/trunk/src/banner/tagging/pipe/SimFind.java
+END
+LowerCaseTokenText.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/banner/code/!svn/ver/12/trunk/src/banner/tagging/pipe/LowerCaseTokenText.java
+END
+LemmaPOS.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/banner/code/!svn/ver/12/trunk/src/banner/tagging/pipe/LemmaPOS.java
+END
+TaggedCachePipe.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/banner/code/!svn/ver/34/trunk/src/banner/tagging/pipe/TaggedCachePipe.java
+END

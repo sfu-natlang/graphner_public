@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/p/banner/code/!svn/ver/3/trunk/nlpdata/tagger
+END
+ngramOne.serial
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/banner/code/!svn/ver/3/trunk/nlpdata/tagger/ngramOne.serial
+END
+lexicon_all
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/p/banner/code/!svn/ver/3/trunk/nlpdata/tagger/lexicon_all
+END
+lexDB.serial
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/banner/code/!svn/ver/3/trunk/nlpdata/tagger/lexDB.serial
+END
+rules_cap
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/p/banner/code/!svn/ver/3/trunk/nlpdata/tagger/rules_cap
+END

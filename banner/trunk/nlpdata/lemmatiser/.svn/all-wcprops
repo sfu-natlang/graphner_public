@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/p/banner/code/!svn/ver/3/trunk/nlpdata/lemmatiser
+END
+adv.index
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/p/banner/code/!svn/ver/3/trunk/nlpdata/lemmatiser/adv.index
+END
+adj.index
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/p/banner/code/!svn/ver/3/trunk/nlpdata/lemmatiser/adj.index
+END
+umlserror.list
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/p/banner/code/!svn/ver/3/trunk/nlpdata/lemmatiser/umlserror.list
+END
+verb.index
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/p/banner/code/!svn/ver/3/trunk/nlpdata/lemmatiser/verb.index
+END
+adv.exc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/p/banner/code/!svn/ver/3/trunk/nlpdata/lemmatiser/adv.exc
+END
+stopwordexc.list
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/banner/code/!svn/ver/3/trunk/nlpdata/lemmatiser/stopwordexc.list
+END
+adj.exc
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/p/banner/code/!svn/ver/3/trunk/nlpdata/lemmatiser/adj.exc
+END
+verb.exc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/banner/code/!svn/ver/3/trunk/nlpdata/lemmatiser/verb.exc
+END
+noun.exc
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/banner/code/!svn/ver/3/trunk/nlpdata/lemmatiser/noun.exc
+END

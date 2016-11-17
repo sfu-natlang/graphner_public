@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing
+END
+ParenthesisPostProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/ParenthesisPostProcessor.class
+END
+ExtractAbbrev.class
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/ExtractAbbrev.class
+END
+FlattenPostProcessor$FlattenType$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/FlattenPostProcessor$FlattenType$1.class
+END
+FlattenPostProcessor$FlattenType$2.class
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/FlattenPostProcessor$FlattenType$2.class
+END
+OneSensePerDiscoursePostProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/OneSensePerDiscoursePostProcessor.class
+END
+ThresholdMentionProbabilityPostProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/ThresholdMentionProbabilityPostProcessor.class
+END
+SequentialPostProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/SequentialPostProcessor.class
+END
+ExtractAbbrev$AbbreviationPair.class
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/ExtractAbbrev$AbbreviationPair.class
+END
+FlattenPostProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/FlattenPostProcessor.class
+END
+OneSensePerDocument.class
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/OneSensePerDocument.class
+END
+PostProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/PostProcessor.class
+END
+LocalAbbreviationPostProcessor.class
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/LocalAbbreviationPostProcessor.class
+END
+FlattenPostProcessor$FlattenType.class
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/p/banner/code/!svn/ver/34/trunk/bin/banner/postprocessing/FlattenPostProcessor$FlattenType.class
+END

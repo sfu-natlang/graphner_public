@@ -1,0 +1,430 @@
+tagformat=IOB
+crfOrder=2
+Thu Oct 06 09:43:44 PDT 2016 loading exception data for lemmatiser...
+Thu Oct 06 09:43:44 PDT 2016 loading done
+Completed input: 1590
+Training data loaded, starting training
+State #0 "O,O"
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-> O,O
+-> O,B-GENE
+State #1 "O,B-GENE"
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-> B-GENE,O
+-> B-GENE,B-GENE
+-> B-GENE,I-GENE
+State #2 "B-GENE,O"
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-> O,O
+-> O,B-GENE
+State #3 "B-GENE,B-GENE"
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-> B-GENE,O
+-> B-GENE,B-GENE
+-> B-GENE,I-GENE
+State #4 "B-GENE,I-GENE"
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-> I-GENE,O
+-> I-GENE,B-GENE
+-> I-GENE,I-GENE
+State #5 "I-GENE,O"
+initialWeight=0.0, finalWeight=0.0
+#destinations=2
+-> O,O
+-> O,B-GENE
+State #6 "I-GENE,B-GENE"
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-> B-GENE,O
+-> B-GENE,B-GENE
+-> B-GENE,I-GENE
+State #7 "I-GENE,I-GENE"
+initialWeight=0.0, finalWeight=0.0
+#destinations=3
+-> I-GENE,O
+-> I-GENE,B-GENE
+-> I-GENE,I-GENE
+Training on 0.2% of the data this round.
+CRF weights[O,O->O,O:O] num features = 157477
+CRF weights[O,O->O,B-GENE:B-GENE] num features = 33050
+CRF weights[O,B-GENE->B-GENE,O:O] num features = 37675
+CRF weights[O,B-GENE->B-GENE,B-GENE:B-GENE] num features = 5501
+CRF weights[O,B-GENE->B-GENE,I-GENE:I-GENE] num features = 25071
+CRF weights[B-GENE,O->O,O:O] num features = 47373
+CRF weights[B-GENE,O->O,B-GENE:B-GENE] num features = 15622
+CRF weights[B-GENE,B-GENE->B-GENE,O:O] num features = 22187
+CRF weights[B-GENE,B-GENE->B-GENE,B-GENE:B-GENE] num features = 4880
+CRF weights[B-GENE,B-GENE->B-GENE,I-GENE:I-GENE] num features = 4598
+CRF weights[B-GENE,I-GENE->I-GENE,O:O] num features = 29425
+CRF weights[B-GENE,I-GENE->I-GENE,B-GENE:B-GENE] num features = 5001
+CRF weights[B-GENE,I-GENE->I-GENE,I-GENE:I-GENE] num features = 21551
+CRF weights[I-GENE,O->O,O:O] num features = 44602
+CRF weights[I-GENE,O->O,B-GENE:B-GENE] num features = 13128
+CRF weights[I-GENE,B-GENE->B-GENE,O:O] num features = 22123
+CRF weights[I-GENE,B-GENE->B-GENE,B-GENE:B-GENE] num features = 4880
+CRF weights[I-GENE,B-GENE->B-GENE,I-GENE:I-GENE] num features = 4634
+CRF weights[I-GENE,I-GENE->I-GENE,O:O] num features = 32588
+CRF weights[I-GENE,I-GENE->I-GENE,B-GENE:B-GENE] num features = 5462
+CRF weights[I-GENE,I-GENE->I-GENE,I-GENE:I-GENE] num features = 22544
+Number of weights = 559393
+CRF about to train with 10 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -82339.85993501062
+getValue() (loglikelihood, optimizable by label likelihood) = -82433.76967631387
+getValue() (loglikelihood, optimizable by label likelihood) = -41855.02477009033
+getValue() (loglikelihood, optimizable by label likelihood) = -33465.093841019705
+CRF finished one iteration of maximizer, i=0
+getValue() (loglikelihood, optimizable by label likelihood) = -326094.57754031377
+getValue() (loglikelihood, optimizable by label likelihood) = -24860.854235233342
+CRF finished one iteration of maximizer, i=1
+getValue() (loglikelihood, optimizable by label likelihood) = -28331.433347934482
+getValue() (loglikelihood, optimizable by label likelihood) = -24078.137403813944
+CRF finished one iteration of maximizer, i=2
+getValue() (loglikelihood, optimizable by label likelihood) = -23090.080530797157
+CRF finished one iteration of maximizer, i=3
+getValue() (loglikelihood, optimizable by label likelihood) = -21260.76720606991
+CRF finished one iteration of maximizer, i=4
+getValue() (loglikelihood, optimizable by label likelihood) = -19534.014091645106
+CRF finished one iteration of maximizer, i=5
+getValue() (loglikelihood, optimizable by label likelihood) = -18516.468500719373
+CRF finished one iteration of maximizer, i=6
+getValue() (loglikelihood, optimizable by label likelihood) = -17091.782939760564
+CRF finished one iteration of maximizer, i=7
+getValue() (loglikelihood, optimizable by label likelihood) = -13861.099931405097
+CRF finished one iteration of maximizer, i=8
+getValue() (loglikelihood, optimizable by label likelihood) = -12304.67759345789
+CRF finished one iteration of maximizer, i=9
+Training on 0.5% of the data this round.
+CRF about to train with 10 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -30648.831905324914
+getValue() (loglikelihood, optimizable by label likelihood) = -770443.7634067736
+getValue() (loglikelihood, optimizable by label likelihood) = -34643.12363296611
+getValue() (loglikelihood, optimizable by label likelihood) = -30063.754681517777
+getValue() (loglikelihood, optimizable by label likelihood) = -29509.517666483825
+CRF finished one iteration of maximizer, i=0
+getValue() (loglikelihood, optimizable by label likelihood) = -29195.064381883145
+CRF finished one iteration of maximizer, i=1
+getValue() (loglikelihood, optimizable by label likelihood) = -28035.739944926834
+CRF finished one iteration of maximizer, i=2
+getValue() (loglikelihood, optimizable by label likelihood) = -26934.043863440846
+CRF finished one iteration of maximizer, i=3
+getValue() (loglikelihood, optimizable by label likelihood) = -24710.33976885089
+CRF finished one iteration of maximizer, i=4
+getValue() (loglikelihood, optimizable by label likelihood) = -37956.52333868311
+getValue() (loglikelihood, optimizable by label likelihood) = -24455.434591667097
+CRF finished one iteration of maximizer, i=5
+getValue() (loglikelihood, optimizable by label likelihood) = -23362.194154419918
+CRF finished one iteration of maximizer, i=6
+getValue() (loglikelihood, optimizable by label likelihood) = -21453.933968697038
+CRF finished one iteration of maximizer, i=7
+getValue() (loglikelihood, optimizable by label likelihood) = -19971.13320926597
+CRF finished one iteration of maximizer, i=8
+getValue() (loglikelihood, optimizable by label likelihood) = -19144.699044180605
+CRF finished one iteration of maximizer, i=9
+Training on 0.8% of the data this round.
+CRF about to train with 10 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -30731.97167999428
+getValue() (loglikelihood, optimizable by label likelihood) = -96031.43754430166
+getValue() (loglikelihood, optimizable by label likelihood) = -30416.134310948513
+getValue() (loglikelihood, optimizable by label likelihood) = -29867.545520060088
+CRF finished one iteration of maximizer, i=0
+getValue() (loglikelihood, optimizable by label likelihood) = -29809.605437597686
+CRF finished one iteration of maximizer, i=1
+getValue() (loglikelihood, optimizable by label likelihood) = -29243.61933213359
+CRF finished one iteration of maximizer, i=2
+getValue() (loglikelihood, optimizable by label likelihood) = -27951.080532209937
+CRF finished one iteration of maximizer, i=3
+getValue() (loglikelihood, optimizable by label likelihood) = -27075.22721165179
+CRF finished one iteration of maximizer, i=4
+getValue() (loglikelihood, optimizable by label likelihood) = -30010.70351244866
+getValue() (loglikelihood, optimizable by label likelihood) = -26778.500129146763
+CRF finished one iteration of maximizer, i=5
+getValue() (loglikelihood, optimizable by label likelihood) = -25952.02692262444
+CRF finished one iteration of maximizer, i=6
+getValue() (loglikelihood, optimizable by label likelihood) = -25363.585704141307
+CRF finished one iteration of maximizer, i=7
+getValue() (loglikelihood, optimizable by label likelihood) = -24939.152355046637
+CRF finished one iteration of maximizer, i=8
+getValue() (loglikelihood, optimizable by label likelihood) = -23747.571242000926
+CRF finished one iteration of maximizer, i=9
+CRF about to train with 2147483647 iterations
+getValue() (loglikelihood, optimizable by label likelihood) = -29708.38574344528
+getValue() (loglikelihood, optimizable by label likelihood) = -1062795.060730052
+getValue() (loglikelihood, optimizable by label likelihood) = -37978.295328669614
+getValue() (loglikelihood, optimizable by label likelihood) = -29588.918303693194
+getValue() (loglikelihood, optimizable by label likelihood) = -29483.639957811403
+CRF finished one iteration of maximizer, i=0
+getValue() (loglikelihood, optimizable by label likelihood) = -28780.459710566895
+CRF finished one iteration of maximizer, i=1
+getValue() (loglikelihood, optimizable by label likelihood) = -28286.587308924427
+CRF finished one iteration of maximizer, i=2
+getValue() (loglikelihood, optimizable by label likelihood) = -27640.914833977702
+CRF finished one iteration of maximizer, i=3
+getValue() (loglikelihood, optimizable by label likelihood) = -27457.20898819183
+CRF finished one iteration of maximizer, i=4
+getValue() (loglikelihood, optimizable by label likelihood) = -27277.032179385194
+CRF finished one iteration of maximizer, i=5
+getValue() (loglikelihood, optimizable by label likelihood) = -27201.783033858028
+CRF finished one iteration of maximizer, i=6
+getValue() (loglikelihood, optimizable by label likelihood) = -27067.912884484536
+CRF finished one iteration of maximizer, i=7
+getValue() (loglikelihood, optimizable by label likelihood) = -26700.244195510433
+CRF finished one iteration of maximizer, i=8
+getValue() (loglikelihood, optimizable by label likelihood) = -26270.007367577615
+CRF finished one iteration of maximizer, i=9
+getValue() (loglikelihood, optimizable by label likelihood) = -25642.69302953203
+CRF finished one iteration of maximizer, i=10
+getValue() (loglikelihood, optimizable by label likelihood) = -25218.081845814842
+CRF finished one iteration of maximizer, i=11
+getValue() (loglikelihood, optimizable by label likelihood) = -24968.359887027444
+CRF finished one iteration of maximizer, i=12
+getValue() (loglikelihood, optimizable by label likelihood) = -24284.2062451844
+CRF finished one iteration of maximizer, i=13
+getValue() (loglikelihood, optimizable by label likelihood) = -23741.175039647784
+CRF finished one iteration of maximizer, i=14
+getValue() (loglikelihood, optimizable by label likelihood) = -23056.571807370263
+CRF finished one iteration of maximizer, i=15
+getValue() (loglikelihood, optimizable by label likelihood) = -23988.2853754025
+getValue() (loglikelihood, optimizable by label likelihood) = -22847.83668823323
+CRF finished one iteration of maximizer, i=16
+getValue() (loglikelihood, optimizable by label likelihood) = -22164.347333864345
+CRF finished one iteration of maximizer, i=17
+getValue() (loglikelihood, optimizable by label likelihood) = -21720.839302180022
+CRF finished one iteration of maximizer, i=18
+getValue() (loglikelihood, optimizable by label likelihood) = -20906.09221600551
+CRF finished one iteration of maximizer, i=19
+getValue() (loglikelihood, optimizable by label likelihood) = -20530.64816946079
+CRF finished one iteration of maximizer, i=20
+getValue() (loglikelihood, optimizable by label likelihood) = -20598.63199924446
+getValue() (loglikelihood, optimizable by label likelihood) = -20387.37931411764
+CRF finished one iteration of maximizer, i=21
+getValue() (loglikelihood, optimizable by label likelihood) = -20275.009280077742
+CRF finished one iteration of maximizer, i=22
+getValue() (loglikelihood, optimizable by label likelihood) = -19955.16074961505
+CRF finished one iteration of maximizer, i=23
+getValue() (loglikelihood, optimizable by label likelihood) = -19817.391121934357
+CRF finished one iteration of maximizer, i=24
+getValue() (loglikelihood, optimizable by label likelihood) = -19478.378834792336
+CRF finished one iteration of maximizer, i=25
+getValue() (loglikelihood, optimizable by label likelihood) = -21743.38212844097
+getValue() (loglikelihood, optimizable by label likelihood) = -19271.00340189754
+CRF finished one iteration of maximizer, i=26
+getValue() (loglikelihood, optimizable by label likelihood) = -18989.155199480876
+CRF finished one iteration of maximizer, i=27
+getValue() (loglikelihood, optimizable by label likelihood) = -18902.5380140871
+CRF finished one iteration of maximizer, i=28
+getValue() (loglikelihood, optimizable by label likelihood) = -18404.354613180072
+CRF finished one iteration of maximizer, i=29
+getValue() (loglikelihood, optimizable by label likelihood) = -18145.531388800875
+CRF finished one iteration of maximizer, i=30
+getValue() (loglikelihood, optimizable by label likelihood) = -18838.051863382563
+getValue() (loglikelihood, optimizable by label likelihood) = -18063.721870681424
+CRF finished one iteration of maximizer, i=31
+getValue() (loglikelihood, optimizable by label likelihood) = -17908.961894657266
+CRF finished one iteration of maximizer, i=32
+getValue() (loglikelihood, optimizable by label likelihood) = -17800.699945620585
+CRF finished one iteration of maximizer, i=33
+getValue() (loglikelihood, optimizable by label likelihood) = -17594.538302160276
+CRF finished one iteration of maximizer, i=34
+getValue() (loglikelihood, optimizable by label likelihood) = -17353.33104200085
+CRF finished one iteration of maximizer, i=35
+getValue() (loglikelihood, optimizable by label likelihood) = -17069.38075146595
+CRF finished one iteration of maximizer, i=36
+getValue() (loglikelihood, optimizable by label likelihood) = -17058.203948899692
+CRF finished one iteration of maximizer, i=37
+getValue() (loglikelihood, optimizable by label likelihood) = -16848.90031480838
+CRF finished one iteration of maximizer, i=38
+getValue() (loglikelihood, optimizable by label likelihood) = -16820.52374299368
+CRF finished one iteration of maximizer, i=39
+getValue() (loglikelihood, optimizable by label likelihood) = -16774.464132329616
+CRF finished one iteration of maximizer, i=40
+getValue() (loglikelihood, optimizable by label likelihood) = -16726.14031961279
+CRF finished one iteration of maximizer, i=41
+getValue() (loglikelihood, optimizable by label likelihood) = -16637.88096310635
+CRF finished one iteration of maximizer, i=42
+getValue() (loglikelihood, optimizable by label likelihood) = -16534.345269343237
+CRF finished one iteration of maximizer, i=43
+getValue() (loglikelihood, optimizable by label likelihood) = -16388.04373745199
+CRF finished one iteration of maximizer, i=44
+getValue() (loglikelihood, optimizable by label likelihood) = -16320.60740019958
+CRF finished one iteration of maximizer, i=45
+getValue() (loglikelihood, optimizable by label likelihood) = -16213.492744834115
+CRF finished one iteration of maximizer, i=46
+getValue() (loglikelihood, optimizable by label likelihood) = -16085.818348428282
+CRF finished one iteration of maximizer, i=47
+getValue() (loglikelihood, optimizable by label likelihood) = -15923.067852309703
+CRF finished one iteration of maximizer, i=48
+getValue() (loglikelihood, optimizable by label likelihood) = -17656.02994385129
+getValue() (loglikelihood, optimizable by label likelihood) = -15894.622553667614
+CRF finished one iteration of maximizer, i=49
+getValue() (loglikelihood, optimizable by label likelihood) = -15786.209292957274
+CRF finished one iteration of maximizer, i=50
+getValue() (loglikelihood, optimizable by label likelihood) = -15695.650158858292
+CRF finished one iteration of maximizer, i=51
+getValue() (loglikelihood, optimizable by label likelihood) = -15560.987199145473
+CRF finished one iteration of maximizer, i=52
+getValue() (loglikelihood, optimizable by label likelihood) = -15413.931033878798
+CRF finished one iteration of maximizer, i=53
+getValue() (loglikelihood, optimizable by label likelihood) = -15117.471270242497
+CRF finished one iteration of maximizer, i=54
+getValue() (loglikelihood, optimizable by label likelihood) = -14873.569762184696
+CRF finished one iteration of maximizer, i=55
+getValue() (loglikelihood, optimizable by label likelihood) = -14583.910659683359
+CRF finished one iteration of maximizer, i=56
+getValue() (loglikelihood, optimizable by label likelihood) = -14472.07032344388
+CRF finished one iteration of maximizer, i=57
+getValue() (loglikelihood, optimizable by label likelihood) = -14424.306147238627
+CRF finished one iteration of maximizer, i=58
+getValue() (loglikelihood, optimizable by label likelihood) = -14371.671357349287
+CRF finished one iteration of maximizer, i=59
+getValue() (loglikelihood, optimizable by label likelihood) = -14266.532262535862
+CRF finished one iteration of maximizer, i=60
+getValue() (loglikelihood, optimizable by label likelihood) = -14098.84086941474
+CRF finished one iteration of maximizer, i=61
+getValue() (loglikelihood, optimizable by label likelihood) = -13905.514212788805
+CRF finished one iteration of maximizer, i=62
+getValue() (loglikelihood, optimizable by label likelihood) = -13623.27831905819
+CRF finished one iteration of maximizer, i=63
+getValue() (loglikelihood, optimizable by label likelihood) = -13572.0381497539
+CRF finished one iteration of maximizer, i=64
+getValue() (loglikelihood, optimizable by label likelihood) = -13465.593245044705
+CRF finished one iteration of maximizer, i=65
+getValue() (loglikelihood, optimizable by label likelihood) = -13307.747383310878
+CRF finished one iteration of maximizer, i=66
+getValue() (loglikelihood, optimizable by label likelihood) = -13129.920927051222
+CRF finished one iteration of maximizer, i=67
+getValue() (loglikelihood, optimizable by label likelihood) = -13307.102497670034
+getValue() (loglikelihood, optimizable by label likelihood) = -13028.303422443687
+CRF finished one iteration of maximizer, i=68
+getValue() (loglikelihood, optimizable by label likelihood) = -12960.269041842876
+CRF finished one iteration of maximizer, i=69
+getValue() (loglikelihood, optimizable by label likelihood) = -12874.295392849584
+CRF finished one iteration of maximizer, i=70
+getValue() (loglikelihood, optimizable by label likelihood) = -12835.96041903959
+CRF finished one iteration of maximizer, i=71
+getValue() (loglikelihood, optimizable by label likelihood) = -12647.13063120825
+CRF finished one iteration of maximizer, i=72
+getValue() (loglikelihood, optimizable by label likelihood) = -13001.195568835577
+getValue() (loglikelihood, optimizable by label likelihood) = -12601.037405195746
+CRF finished one iteration of maximizer, i=73
+getValue() (loglikelihood, optimizable by label likelihood) = -12480.587677596412
+CRF finished one iteration of maximizer, i=74
+getValue() (loglikelihood, optimizable by label likelihood) = -12408.822891159123
+CRF finished one iteration of maximizer, i=75
+getValue() (loglikelihood, optimizable by label likelihood) = -12320.160379373901
+CRF finished one iteration of maximizer, i=76
+getValue() (loglikelihood, optimizable by label likelihood) = -12191.688711067654
+CRF finished one iteration of maximizer, i=77
+getValue() (loglikelihood, optimizable by label likelihood) = -12335.968714575478
+getValue() (loglikelihood, optimizable by label likelihood) = -12107.388249482101
+CRF finished one iteration of maximizer, i=78
+getValue() (loglikelihood, optimizable by label likelihood) = -12076.622661754056
+CRF finished one iteration of maximizer, i=79
+getValue() (loglikelihood, optimizable by label likelihood) = -11968.441695817608
+CRF finished one iteration of maximizer, i=80
+getValue() (loglikelihood, optimizable by label likelihood) = -11954.338353348383
+CRF finished one iteration of maximizer, i=81
+getValue() (loglikelihood, optimizable by label likelihood) = -11935.705403711778
+CRF finished one iteration of maximizer, i=82
+getValue() (loglikelihood, optimizable by label likelihood) = -11893.40253080554
+CRF finished one iteration of maximizer, i=83
+getValue() (loglikelihood, optimizable by label likelihood) = -11891.742992544992
+CRF finished one iteration of maximizer, i=84
+getValue() (loglikelihood, optimizable by label likelihood) = -11852.001182340335
+CRF finished one iteration of maximizer, i=85
+getValue() (loglikelihood, optimizable by label likelihood) = -11849.325929321001
+CRF finished one iteration of maximizer, i=86
+getValue() (loglikelihood, optimizable by label likelihood) = -11846.371173375543
+CRF finished one iteration of maximizer, i=87
+getValue() (loglikelihood, optimizable by label likelihood) = -11819.450519086688
+CRF finished one iteration of maximizer, i=88
+getValue() (loglikelihood, optimizable by label likelihood) = -11815.838057360086
+CRF finished one iteration of maximizer, i=89
+getValue() (loglikelihood, optimizable by label likelihood) = -11808.627874526615
+CRF finished one iteration of maximizer, i=90
+getValue() (loglikelihood, optimizable by label likelihood) = -11790.744400127098
+CRF finished one iteration of maximizer, i=91
+getValue() (loglikelihood, optimizable by label likelihood) = -11748.680001599616
+CRF finished one iteration of maximizer, i=92
+getValue() (loglikelihood, optimizable by label likelihood) = -11685.021413410828
+CRF finished one iteration of maximizer, i=93
+getValue() (loglikelihood, optimizable by label likelihood) = -11601.334156882831
+CRF finished one iteration of maximizer, i=94
+getValue() (loglikelihood, optimizable by label likelihood) = -11549.434762200257
+CRF finished one iteration of maximizer, i=95
+getValue() (loglikelihood, optimizable by label likelihood) = -11484.509141929268
+CRF finished one iteration of maximizer, i=96
+getValue() (loglikelihood, optimizable by label likelihood) = -11432.095406255052
+CRF finished one iteration of maximizer, i=97
+getValue() (loglikelihood, optimizable by label likelihood) = -11364.241010426817
+CRF finished one iteration of maximizer, i=98
+getValue() (loglikelihood, optimizable by label likelihood) = -11279.58392382491
+CRF finished one iteration of maximizer, i=99
+getValue() (loglikelihood, optimizable by label likelihood) = -11232.931822256813
+CRF finished one iteration of maximizer, i=100
+getValue() (loglikelihood, optimizable by label likelihood) = -11129.695109169072
+CRF finished one iteration of maximizer, i=101
+getValue() (loglikelihood, optimizable by label likelihood) = -11035.894349548433
+CRF finished one iteration of maximizer, i=102
+getValue() (loglikelihood, optimizable by label likelihood) = -11029.21466644497
+CRF finished one iteration of maximizer, i=103
+getValue() (loglikelihood, optimizable by label likelihood) = -11017.159132308232
+CRF finished one iteration of maximizer, i=104
+getValue() (loglikelihood, optimizable by label likelihood) = -10898.151748408527
+CRF finished one iteration of maximizer, i=105
+getValue() (loglikelihood, optimizable by label likelihood) = -10788.269238607978
+CRF finished one iteration of maximizer, i=106
+getValue() (loglikelihood, optimizable by label likelihood) = -10703.663386618244
+CRF finished one iteration of maximizer, i=107
+getValue() (loglikelihood, optimizable by label likelihood) = -10665.72989775751
+CRF finished one iteration of maximizer, i=108
+getValue() (loglikelihood, optimizable by label likelihood) = -10603.825285720255
+CRF finished one iteration of maximizer, i=109
+getValue() (loglikelihood, optimizable by label likelihood) = -10510.293374965217
+CRF finished one iteration of maximizer, i=110
+getValue() (loglikelihood, optimizable by label likelihood) = -10489.646330156671
+CRF finished one iteration of maximizer, i=111
+getValue() (loglikelihood, optimizable by label likelihood) = -10410.436375771538
+CRF finished one iteration of maximizer, i=112
+getValue() (loglikelihood, optimizable by label likelihood) = -11149.054630931721
+getValue() (loglikelihood, optimizable by label likelihood) = -10388.648143231942
+CRF finished one iteration of maximizer, i=113
+getValue() (loglikelihood, optimizable by label likelihood) = -10335.171048036582
+CRF finished one iteration of maximizer, i=114
+getValue() (loglikelihood, optimizable by label likelihood) = -10284.141087294212
+CRF finished one iteration of maximizer, i=115
+getValue() (loglikelihood, optimizable by label likelihood) = -10238.702636872227
+CRF finished one iteration of maximizer, i=116
+getValue() (loglikelihood, optimizable by label likelihood) = -10163.23423948724
+CRF finished one iteration of maximizer, i=117
+getValue() (loglikelihood, optimizable by label likelihood) = -10052.010630523782
+CRF finished one iteration of maximizer, i=118
+getValue() (loglikelihood, optimizable by label likelihood) = -10177.293030119796
+getValue() (loglikelihood, optimizable by label likelihood) = -9985.588666324962
+CRF finished one iteration of maximizer, i=119
+getValue() (loglikelihood, optimizable by label likelihood) = -9909.63509710878
+CRF finished one iteration of maximizer, i=120
+getValue() (loglikelihood, optimizable by label likelihood) = -9878.630222106087
+CRF finished one iteration of maximizer, i=121
+getValue() (loglikelihood, optimizable by label likelihood) = -9853.956910381103
+CRF finished one iteration of maximizer, i=122
+getValue() (loglikelihood, optimizable by label likelihood) = -9771.708278712285
+CRF finished one iteration of maximizer, i=123
+getValue() (loglikelihood, optimizable by label likelihood) = -9683.901184920585
+CRF finished one iteration of maximizer, i=124
+getValue() (loglikelihood, optimizable by label likelihood) = -9640.548344694831
+CRF finished one iteration of maximizer, i=125
+getValue() (loglikelihood, optimizable by label likelihood) = -9603.773516383193
+CRF finished one iteration of maximizer, i=126
+getValue() (loglikelihood, optimizable by label likelihood) = -9562.075248279154
+CRF finished one iteration of maximizer, i=127
+getValue() (loglikelihood, optimizable by label likelihood) = -9561.652666947877
+Exiting L-BFGS on termination #1:
+value difference below tolerance (oldValue: -9562.075248279154 newValue: -9561.652666947877
+CRF finished one iteration of maximizer, i=128
+CRF training has converged, i=128
+Training complete, saving model

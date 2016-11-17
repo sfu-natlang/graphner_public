@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/p/banner/code/!svn/ver/31/trunk/src/banner/util
+END
+RankedList.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/banner/code/!svn/ver/31/trunk/src/banner/util/RankedList.java
+END
+SentenceBreaker.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/banner/code/!svn/ver/21/trunk/src/banner/util/SentenceBreaker.java
+END
+CollectionsRand.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/banner/code/!svn/ver/3/trunk/src/banner/util/CollectionsRand.java
+END
+Trie.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/p/banner/code/!svn/ver/3/trunk/src/banner/util/Trie.java
+END
+SetSimilarityMetric.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/banner/code/!svn/ver/13/trunk/src/banner/util/SetSimilarityMetric.java
+END
+Index.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/banner/code/!svn/ver/31/trunk/src/banner/util/Index.java
+END
+IndexedMetricSetSimilarity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/p/banner/code/!svn/ver/14/trunk/src/banner/util/IndexedMetricSetSimilarity.java
+END
+UnmodifiableArraySet.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/p/banner/code/!svn/ver/3/trunk/src/banner/util/UnmodifiableArraySet.java
+END

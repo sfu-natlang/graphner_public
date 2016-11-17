@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/p/banner/code/!svn/ver/16/trunk/lib/uima
+END
+uima-examples.jar
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/p/banner/code/!svn/ver/16/trunk/lib/uima/uima-examples.jar
+END
+uima-adapter-soap.jar
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/banner/code/!svn/ver/16/trunk/lib/uima/uima-adapter-soap.jar
+END
+uima-tools.jar
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/p/banner/code/!svn/ver/16/trunk/lib/uima/uima-tools.jar
+END
+uima-adapter-vinci.jar
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/banner/code/!svn/ver/16/trunk/lib/uima/uima-adapter-vinci.jar
+END
+uima-document-annotation.jar
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/banner/code/!svn/ver/16/trunk/lib/uima/uima-document-annotation.jar
+END
+uima-cpe.jar
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/p/banner/code/!svn/ver/16/trunk/lib/uima/uima-cpe.jar
+END
+uima-core.jar
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/p/banner/code/!svn/ver/16/trunk/lib/uima/uima-core.jar
+END

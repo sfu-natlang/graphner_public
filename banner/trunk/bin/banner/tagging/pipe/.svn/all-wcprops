@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe
+END
+LemmaPOS.class
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/LemmaPOS.class
+END
+RChar.class
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/RChar.class
+END
+TokenNumberClass.class
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/TokenNumberClass.class
+END
+Pretagger.class
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/Pretagger.class
+END
+Sentence2TokenSequence.class
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/Sentence2TokenSequence.class
+END
+TokenLength.class
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/TokenLength.class
+END
+TokenWordClass.class
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/TokenWordClass.class
+END
+TokenWeight.class
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/TokenWeight.class
+END
+LChar.class
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/LChar.class
+END
+SimFind.class
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/SimFind.class
+END
+LowerCaseTokenText.class
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/pipe/LowerCaseTokenText.class
+END

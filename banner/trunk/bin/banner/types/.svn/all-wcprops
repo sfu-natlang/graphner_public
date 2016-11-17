@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types
+END
+EntityIdentification$1.class
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/EntityIdentification$1.class
+END
+Entity.class
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/Entity.class
+END
+EntityName.class
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/EntityName.class
+END
+EntityType.class
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/EntityType.class
+END
+Token.class
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/Token.class
+END
+Sentence.class
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/Sentence.class
+END
+EntityIdentification.class
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/EntityIdentification.class
+END
+SentenceWithOffset.class
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/SentenceWithOffset.class
+END
+Mention$MentionType.class
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/Mention$MentionType.class
+END
+Mention.class
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/Mention.class
+END
+Sentence$OverlapOption.class
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/p/banner/code/!svn/ver/34/trunk/bin/banner/types/Sentence$OverlapOption.class
+END

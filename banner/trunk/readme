@@ -1,0 +1,62 @@
+
+
+
+
+===========================
+Expected performance
+===========================
+
+./scripts/banner.sh test config/banner_NCBIDisease_DEV.xml
+
+TP: 621
+FP: 161
+FN: 166
+precision: 0.7941176470588235
+   recall: 0.7890724269377383
+f-measure: 0.7915869980879541
+
+./scripts/banner.sh test config/banner_NCBIDisease_UMLS2013AA_DEV.xml
+
+TP: 648
+FP: 153
+FN: 139
+precision: 0.8089887640449438
+   recall: 0.8233799237611181
+f-measure: 0.8161209068010076
+
+./scripts/banner.sh test config/banner_NCBIDisease_TEST.xml 
+
+TP: 737
+FP: 163
+FN: 223
+precision: 0.8188888888888889
+   recall: 0.7677083333333333
+f-measure: 0.7924731182795699
+
+./scripts/banner.sh test config/banner_NCBIDisease_UMLS2013AA_TEST.xml
+
+TP: 743
+FP: 154
+FN: 217
+precision: 0.8283166109253066
+   recall: 0.7739583333333333
+f-measure: 0.8002154011847065
+
+./scripts/banner.sh test config/banner_BC5CDR_50.xml
+
+TP: 284
+FP: 87
+FN: 140
+precision: 0.7654986522911051
+   recall: 0.6698113207547169
+f-measure: 0.7144654088050315
+
+./scripts/banner.sh test config/banner_BC5CDR_UMLS2013AA_50.xml 
+
+TP: 313
+FP: 88
+FN: 111
+precision: 0.7805486284289277
+   recall: 0.7382075471698113
+f-measure: 0.7587878787878788
+

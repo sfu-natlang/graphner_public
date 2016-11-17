@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging
+END
+NBestCRFTagger.class
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/NBestCRFTagger.class
+END
+TagPosition.class
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/TagPosition.class
+END
+CRFTagger.class
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/CRFTagger.class
+END
+TagFormat.class
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/TagFormat.class
+END
+FeatureSet.class
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/FeatureSet.class
+END
+Tagger.class
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/p/banner/code/!svn/ver/34/trunk/bin/banner/tagging/Tagger.class
+END
