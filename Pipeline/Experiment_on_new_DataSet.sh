@@ -26,7 +26,7 @@ date
 pwd
 cd ../banner/trunk
 pwd
-./scripts/banner.sh test $labelledConfigFile
+./scripts/banner.sh test $labelledConfigFile >& logfile
 
 cd ../../Pipeline
 
@@ -43,7 +43,7 @@ date
 rm MiddleFiles/marginals.txt ; rm MiddleFiles/featureVectors.txt; rm MiddleFiles/sentencelengths.txt; rm MiddleFiles/transitions.txt; rm MiddleFiles/marginals_old.txt
 pwd
 cd ../banner/trunk
-./scripts/banner.sh test $unlabelledConfigFile
+./scripts/banner.sh test $unlabelledConfigFile >& logfile
 
 echo "mention.txt is being modified"
 ../../Pipeline/ModifyBannerMention.o 0 output/mention.txt output/mention_modified.txt
@@ -52,6 +52,8 @@ echo "BioCreativeII Perl Evaluation:"
 date 
 
 cd ../../Data/bc2geneMention/train
+
+echo "Kernel Performance:"
 
 perl alt_eval.perl -gene $GENEFile -altgene $ALTGENEFile ../../../banner/trunk/output/mention_modified.txt 
 

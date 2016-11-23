@@ -16,7 +16,7 @@ ALTGENEFile=$6
 
 cd ../Data/bc2geneMention/train
 
-
+echo "GraphNER performance:"
 perl alt_eval.perl -gene $GENEFile -altgene $ALTGENEFile ../../../Pipeline/MiddleFiles/GENE.eval_marginals_combined_viterbi
 
 perl alt_eval_detailedVersion.perl -gene $GENEFile -altgene $ALTGENEFile ../../../Pipeline/MiddleFiles/GENE.eval_marginals_combined_viterbi > ../../../Pipeline/MiddleFiles/GraphNerDetailedOutput

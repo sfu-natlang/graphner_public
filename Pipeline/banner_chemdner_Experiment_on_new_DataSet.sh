@@ -30,7 +30,7 @@ date
 cd ../banner-chemdner/
 pwd
 echo "application.args=test "$labelledConfigFile >nbproject/project.applicationArgs
-ant -f build.xml run 
+ant -f build.xml run >& logfile
 
 cd ../Pipeline
 
@@ -47,7 +47,7 @@ date
 
 cd ../banner-chemdner/
 echo "application.args=test "$unlabelledConfigFile > nbproject/project.applicationArgs
-ant -f build.xml run
+ant -f build.xml run >& logfile
 
 echo "mention.txt is being modified"
 ../Pipeline/ModifyBannerMention.o 0 output/mention.txt output/mention_modified.txt
@@ -57,6 +57,8 @@ date
 
 cd ../Data/bc2geneMention/train
 pwd
+
+echo "Kernel performance:"
 perl alt_eval.perl -gene $GENEFile -altgene $ALTGENEFile  ../../../banner-chemdner/output/mention_modified.txt 
 
 perl alt_eval_detailedVersion.perl -gene $GENEFile -altgene $ALTGENEFile  ../../../banner-chemdner/output/mention_modified.txt > ../../../Pipeline/MiddleFiles/KernelDetailOutput
