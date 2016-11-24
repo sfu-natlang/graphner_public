@@ -19,7 +19,7 @@ echo "application.args=train "$labelledConfigFile >nbproject/project.application
 ant -f build.xml run >& logfile
 
 cd ../Pipeline
-rm MiddleFiles/marginals.txt ; rm MiddleFiles/featureVectors.txt; rm MiddleFiles/sentencelengths.txt; rm MiddleFiles/transitions.txt rm MiddleFiles/marginals_old.txt
+rm MiddleFiles/marginals.txt ; rm MiddleFiles/featureVectors.txt; rm MiddleFiles/sentencelengths.txt; rm MiddleFiles/transitions.txt; rm MiddleFiles/marginals_old.txt
 
 echo "putting reference distributions on labelled vertices ... "
 
@@ -33,7 +33,7 @@ cd ../Pipeline
 ./Get_Average_Dists.o 0 MiddleFiles/Training_Token_Dists.txt MiddleFiles/Ref_Dists_Averaged_For_Types 3 3 >& logfile
 
 
-rm MiddleFiles/marginals.txt ; rm MiddleFiles/featureVectors.txt; rm MiddleFiles/sentencelengths.txt; rm MiddleFiles/transitions.txt rm MiddleFiles/marginals_old.txt
+rm MiddleFiles/marginals.txt ; rm MiddleFiles/featureVectors.txt; rm MiddleFiles/sentencelengths.txt; rm MiddleFiles/transitions.txt; rm MiddleFiles/marginals_old.txt
 
 echo "testing ..."
 
@@ -59,5 +59,4 @@ cd ../../../Pipeline
 
 
 echo "Done."
-date
 

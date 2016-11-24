@@ -21,7 +21,7 @@ cd ../banner/trunk
 cd ../../Pipeline
 rm MiddleFiles/marginals.txt ; rm MiddleFiles/featureVectors.txt; rm MiddleFiles/sentencelengths.txt; rm MiddleFiles/transitions.txt; rm MiddleFiles/marginals_old.txt
 
-echo "putting reference labels ..."
+echo "putting reference distributions on labelled vertices ..."
 cd ../banner/trunk
 ./scripts/banner.sh test $labelledConfigFile >& logfile
 
@@ -52,7 +52,7 @@ perl alt_eval_detailedVersion.perl -gene $GENEFile -altgene $ALTGENEFile ../../.
 
 cd ../../../Pipeline
 
-date
+
 
 ./Get_Average_Dists.o 0 MiddleFiles/marginals.txt MiddleFiles/Average_marginals.txt 3   3  >& logfile
 ./test_viterbiDecoding.sh $alpha $mu $nu $itrNum $GENEFile $ALTGENEFile 
