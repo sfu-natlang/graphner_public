@@ -15,18 +15,15 @@ ALTGENEFile=$8
 echo "training ..."
 
 cd ../banner-chemdner/
-pwd
 echo "application.args=train "$labelledConfigFile >nbproject/project.applicationArgs
 ant -f build.xml run >& logfile
 
 cd ../Pipeline
-pwd
 rm MiddleFiles/marginals.txt ; rm MiddleFiles/featureVectors.txt; rm MiddleFiles/sentencelengths.txt; rm MiddleFiles/transitions.txt rm MiddleFiles/marginals_old.txt
 
 echo "putting reference distributions on labelled vertices ... "
 
 cd ../banner-chemdner/
-pwd
 echo "application.args=test "$labelledConfigFile >nbproject/project.applicationArgs
 ant -f build.xml run >& logfile
 
@@ -48,7 +45,6 @@ ant -f build.xml run >& logfile
 
 
 cd ../Data/bc2geneMention/train
-pwd
 
 echo "Kernel performance:"
 perl alt_eval.perl -gene $GENEFile -altgene $ALTGENEFile  ../../../banner-chemdner/output/mention_modified.txt 
@@ -58,7 +54,6 @@ perl alt_eval_detailedVersion.perl -gene $GENEFile -altgene $ALTGENEFile  ../../
 
 
 cd ../../../Pipeline
-pwd
 ./Get_Average_Dists.o 0 MiddleFiles/marginals.txt MiddleFiles/Average_marginals.txt 3   3  >& logfile
 ./banner_chemdner_test_viterbiDecoding.sh $alpha $mu $nu $itrNum $GENEFile $ALTGENEFile 
 
