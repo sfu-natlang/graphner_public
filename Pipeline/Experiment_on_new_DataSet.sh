@@ -31,8 +31,8 @@ pwd
 cd ../../Pipeline
 
 
-./Get_Ref_Distributions_For_Tokens.o 0 ../banner/trunk/output/training.txt MiddleFiles/featureVectors.txt MiddleFiles/Training_Token_Dists.txt 3 3 MiddleFiles/LabelsOrder.txt
-./Get_Average_Dists.o 0 MiddleFiles/Training_Token_Dists.txt MiddleFiles/Ref_Dists_Averaged_For_Types 3 3
+./Get_Ref_Distributions_For_Tokens.o 0 ../banner/trunk/output/training.txt MiddleFiles/featureVectors.txt MiddleFiles/Training_Token_Dists.txt 3 3 MiddleFiles/LabelsOrder.txt >& logfile
+./Get_Average_Dists.o 0 MiddleFiles/Training_Token_Dists.txt MiddleFiles/Ref_Dists_Averaged_For_Types 3 3 >& logfile
 
 
 echo "testing ..."
@@ -43,7 +43,7 @@ pwd
 cd ../banner/trunk
 ./scripts/banner.sh test $unlabelledConfigFile >& logfile
 
-../../Pipeline/ModifyBannerMention.o 0 output/mention.txt output/mention_modified.txt
+../../Pipeline/ModifyBannerMention.o 0 output/mention.txt output/mention_modified.txt >& logfile
 
 
 cd ../../Data/bc2geneMention/train
@@ -58,7 +58,7 @@ cd ../../../Pipeline
 
 date
 
-./Get_Average_Dists.o 0 MiddleFiles/marginals.txt MiddleFiles/Average_marginals.txt 3   3  
+./Get_Average_Dists.o 0 MiddleFiles/marginals.txt MiddleFiles/Average_marginals.txt 3   3  >& logfile
 ./test_viterbiDecoding.sh $alpha $mu $nu $itrNum $GENEFile $ALTGENEFile 
 
 echo "Done."

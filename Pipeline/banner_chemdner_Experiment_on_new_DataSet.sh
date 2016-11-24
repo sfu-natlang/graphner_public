@@ -32,8 +32,8 @@ ant -f build.xml run >& logfile
 
 cd ../Pipeline
 
-./Get_Ref_Distributions_For_Tokens.o 0 ../banner-chemdner/output/training.txt MiddleFiles/featureVectors.txt MiddleFiles/Training_Token_Dists.txt 3 3 MiddleFiles/LabelsOrder.txt
-./Get_Average_Dists.o 0 MiddleFiles/Training_Token_Dists.txt MiddleFiles/Ref_Dists_Averaged_For_Types 3 3
+./Get_Ref_Distributions_For_Tokens.o 0 ../banner-chemdner/output/training.txt MiddleFiles/featureVectors.txt MiddleFiles/Training_Token_Dists.txt 3 3 MiddleFiles/LabelsOrder.txt >& logfile
+./Get_Average_Dists.o 0 MiddleFiles/Training_Token_Dists.txt MiddleFiles/Ref_Dists_Averaged_For_Types 3 3 >& logfile
 
 
 rm MiddleFiles/marginals.txt ; rm MiddleFiles/featureVectors.txt; rm MiddleFiles/sentencelengths.txt; rm MiddleFiles/transitions.txt rm MiddleFiles/marginals_old.txt
@@ -44,7 +44,7 @@ cd ../banner-chemdner/
 echo "application.args=test "$unlabelledConfigFile > nbproject/project.applicationArgs
 ant -f build.xml run >& logfile
 
-../Pipeline/ModifyBannerMention.o 0 output/mention.txt output/mention_modified.txt
+../Pipeline/ModifyBannerMention.o 0 output/mention.txt output/mention_modified.txt >& logfile
 
 
 cd ../Data/bc2geneMention/train
@@ -59,7 +59,7 @@ perl alt_eval_detailedVersion.perl -gene $GENEFile -altgene $ALTGENEFile  ../../
 
 cd ../../../Pipeline
 pwd
-./Get_Average_Dists.o 0 MiddleFiles/marginals.txt MiddleFiles/Average_marginals.txt 3   3  
+./Get_Average_Dists.o 0 MiddleFiles/marginals.txt MiddleFiles/Average_marginals.txt 3   3  >& logfile
 ./banner_chemdner_test_viterbiDecoding.sh $alpha $mu $nu $itrNum $GENEFile $ALTGENEFile 
 
 
