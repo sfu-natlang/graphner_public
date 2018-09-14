@@ -98,9 +98,7 @@ int main(int argc, char** argv)
 			//cout << endl;
 			if (current_literal.size()>0)
                         {
-                                if (start == -1)
-                                        start = 0; // added later-on (on Sep 1st) to address a bug. Why it might be -1 should be investigated further.
-				if (valid_parantheses(current_literal)) // Added by Golnar -- March 14, 2016
+                                if ((start != -1) && (valid_parantheses(current_literal))) // if we have I after O, start will be -1. We are ignoring such sequences (IIII instead of BIII)
                                 	outf<< current_id<<"|"<<start << " " << end << "|" << current_literal << endl;
                                 current_literal = "";
                                 start=-1;
@@ -108,7 +106,7 @@ int main(int argc, char** argv)
                         }
 
 			getline(inf_ids, current_id);
-			//cout << current_id << endl;
+			//cout << current_id << "\t" << endl;
 			current_offset=0;
 			continue;
 		}
@@ -179,15 +177,20 @@ int main(int argc, char** argv)
 		}
 		if (label=="B")
 		{
+			//cout << word << "/B ";
 			current_literal = word;
 			start = current_offset;
 			end = current_offset+word.size()-1;	
 		}
-		if (label=="I")
+		else if (label=="I")
 		{
+			//cout << word << "/I ";
 			current_literal += " "+word;
 			end = current_offset+word.size()-1;
 		}
+		/*else 
+			cout << word << "/O ";*/
+		
 
 		current_offset+=word.size();
 	}
