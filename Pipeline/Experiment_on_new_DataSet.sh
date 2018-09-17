@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 alpha=$1
 mu=$2
